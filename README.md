@@ -176,20 +176,3 @@ When a test fails, rerun the same stage with `--verbose --keep-logs`:
 ```
 
 The script prints the temporary log directory. It also stores replay commands in `fails.txt` when applicable. Keep the logs before the script exits if you need to inspect them.
-
-## Important limitations
-
-- The script is a helper, not a replacement for the official evaluation or a human code review.
-- Norminette, memory tools, and optional checker comparisons depend on what is installed on your machine.
-- `nm` results are warnings for manual inspection; they do not automatically prove that a function or global variable is forbidden.
-- The README audit checks for expected headings and keywords. It cannot judge whether your explanations are accurate or sufficiently detailed.
-- The manual defense requirements (team presence, understanding of the whole codebase, algorithm explanation, and the `--count-only` live modification) must be checked by a human.
-- Run the script on a clean clone of your own repository before relying on its results. Review the script itself before using it in an evaluation.
-
-## Contributing
-
-Bug reports, improvements, and additional test cases are welcome. If you find a false positive or a missing case, please open an issue or submit a pull request with the command and expected behavior.
-
-## License
-
-Choose and add a license before redistributing this script. If no license is included, the repository's reuse terms may be unclear.
